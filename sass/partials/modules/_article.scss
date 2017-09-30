@@ -162,3 +162,23 @@
   }
 
 }
+
+
+.my-img {
+  width: 200px;
+  filter: none;
+  opacity: none;
+} 
+
+.personal-info__item {
+  width: 100%;
+
+  @include query(768px) {
+    width: 50%;
+  }
+}
+
+
+.personal-info {
+  display: flex;
+}
