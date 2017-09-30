@@ -1,0 +1,21 @@
+input,
+textarea,
+select, {
+  font: 1em/1.5 $font-family-base;
+
+}
+
+label {
+  border: none;
+  display: block;
+  font-weight: bold
+}
+
+[type~=checkbox] {
+  display: inline;
+  margin-bottom: .75rem;
+}
+
+textarea {
+  resize: none;
+}
