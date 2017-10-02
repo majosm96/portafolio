@@ -23,8 +23,9 @@
 
 
 .bg-pattern {
-  background: url();
-  color: #fff;
+  background-image: url(../img/dot_final.png);
+	background-size: 15px;
+	background-repeat: repeat;
 }
 
 .section-wrap {

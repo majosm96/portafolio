@@ -1,0 +1,25 @@
+.skills {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+.skills__item-skill {
+    width: 100%;
+    flex: 1 auto;
+    text-align: center;
+    padding: $space-small;
+
+    @include query(650px) {
+     width: 30%;
+  }
+}
+
+.skills__img {
+  img {
+      width: 100px;
+  }
+}
