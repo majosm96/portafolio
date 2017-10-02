@@ -370,50 +370,14 @@ hr {
   .project-img img {
     filter: grayscale(0.2) opacity(0.2) saturate(8); }
 
+.project-img:hover img {
+  filter: grayscale(100%) opacity(0.1); }
+
 .proyect-info {
   position: absolute;
   margin: 30px; }
   .proyect-info h4 {
     margin-top: 10px; }
-
-.draw {
-  transition: color 0.25s; }
-  .draw::before, .draw::after {
-    border: 2px solid transparent;
-    width: 0;
-    height: 0; }
-  .draw::before {
-    top: 0;
-    left: 0; }
-  .draw::after {
-    bottom: 0;
-    right: 0; }
-  .draw:hover {
-    color: #60daaa; }
-  .draw:hover::before, .draw:hover::after {
-    width: 100%;
-    height: 100%; }
-  .draw:hover::before {
-    border-top-color: #60daaa;
-    border-right-color: #60daaa;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-  .draw:hover::after {
-    border-bottom-color: #60daaa;
-    border-left-color: #60daaa;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
-
-.meet:hover {
-  color: #fbca67; }
-.meet::after {
-  top: 0;
-  left: 0; }
-.meet:hover::before {
-  border-top-color: #fbca67;
-  border-right-color: #fbca67; }
-.meet:hover::after {
-  border-bottom-color: #fbca67;
-  border-left-color: #fbca67;
-  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
 
 .my-img {
   width: 200px;
@@ -436,11 +400,21 @@ hr {
   text-align: center; }
 
 .skills {
+  justify-content: center;
   display: flex;
-  width: 100%; }
+  flex-wrap: wrap;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0; }
 
 .skills__item-skill {
-  width: 30%; }
+  width: 100%;
+  flex: 1 auto;
+  text-align: center;
+  padding: 1.125rem; }
+  @media only screen and (min-width: 650px) {
+    .skills__item-skill {
+      width: 30%; } }
 
 .skills__img img {
   width: 100px; }
