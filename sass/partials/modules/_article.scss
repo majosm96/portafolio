@@ -63,15 +63,17 @@
   // }
 }
 
+.project-img__wrapper {
+  background-color: #fff;
+}
 
 
 .project-img {
-    filter: grayscale(0.2) opacity(0.2) saturate(8);
-}
-
-// .project-img:hover { 
-//    filter: grayscale(0.1) opacity(0.1);
-//  }
+    background-color: #fff;
+    img {
+      filter: grayscale(0.2) opacity(0.2) saturate(8);
+    }
+ }
 
 .proyect-info {
   position: absolute;
@@ -170,15 +172,23 @@
   opacity: none;
 } 
 
+.personal-info {
+   h1 {
+     margin-top: 15px;
+   }
+}
+
 .personal-info__item {
   width: 100%;
+  float: left;
+  padding: $space-small;
 
   @include query(768px) {
-    width: 50%;
+     width: 50%;
+     padding: $space-medium;
   }
 }
 
-
-.personal-info {
-  display: flex;
+.align {
+  text-align: center;
 }
