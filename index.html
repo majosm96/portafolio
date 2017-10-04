@@ -18,14 +18,37 @@
       <div class="l-group">
         <header class="l-group bg-pattern " role="banner">
           <div class="site-nav">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo bg-imgs">
               <img src="img/logo_dark_heavy.png" alt="Logo Maria Jose Solis">
             </a>
-            <nav class="main-menu">
-              <img src="img/menu_dark_heavy.png" alt="Menu" class="menu-img">
-              <ul class="menu main-menu__items">
-              </ul>
+            <nav class="main-menu" id="menu">
+              <img src="img/menu_dark_heavy.png" alt="Menu" class="menu-img bg-imgs">
             </nav>
+          </div>
+
+          <div class="navigation" id="navigation">
+
+            <div class="site-nav">
+              <a href="index.html" class="logo">
+              <img src="img/logo_white.png" alt="Logo Maria Jose Solis">
+            </a>
+              <nav class="main-menu" id="hideMenu">
+                <img src="img/menu_white_heavy.png" alt="Menu" class="menu-img">
+                <ul class="menu main-menu__items">
+                </ul>
+              </nav>
+            </div>
+
+            <div class="left-nav"></div>
+            <div class="right-nav">
+              <ul class="inner-nav">
+                <li><a href="#projects">Work</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
           </div>
         </header>
       </div>
@@ -54,7 +77,7 @@
         </section>
 
         <!--List of works-->
-        <section class="l-group section-wrap">
+        <section class="l-group section-wrap" id="projects">
 
           <h2 class="h2-section">Work</h2>
 
@@ -115,7 +138,7 @@
         </section>
 
         <!--Skills-->
-        <section class="l-group section-wrap">
+        <section class="l-group section-wrap" id="skills">
 
           <h2 class="h2-section">Skills</h2>
 
@@ -148,7 +171,7 @@
         </section>
 
         <!--Contact-->
-        <section class="l-group section-wrap">
+        <section class="l-group section-wrap" id="contact">
 
           <h2 class="h2-section">Contact</h2>
 
@@ -181,5 +204,6 @@
         <p>© 2017 MARIA JOSE SOLIS. ALL RIGHTS RESERVED.</p>
       </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
