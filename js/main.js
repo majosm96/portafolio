@@ -1,3 +1,5 @@
+var menuOpen = document.getElementById("menu");
+var menuClose = document.getElementById("hideMenu");
 
 function toggleMenu() {
   var menuBox = document.getElementById('navigation');
@@ -11,8 +13,5 @@ function toggleMenu() {
   }
 }
 
-var menuToggle = document.getElementById('menu');
-var menuToggle02 = document.getElementById('hideMenu');
-
-menuToggle.addEventListener("click", toggleMenu);
-menuToggle02.addEventListener("click", toggleMenu);
+menuOpen.addEventListener("click", toggleMenu);
+menuClose.addEventListener("click", toggleMenu);
