@@ -471,8 +471,8 @@ hr {
 }
 
 .project-img img {
-  -webkit-filter: grayscale(0.2) opacity(0.2) saturate(8);
-          filter: grayscale(0.2) opacity(0.2) saturate(8);
+  -webkit-filter: grayscale(0.2) opacity(0.2) saturate(6);
+          filter: grayscale(0.2) opacity(0.2) saturate(6);
 }
 
 .project-img:hover img {
