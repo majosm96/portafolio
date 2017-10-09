@@ -1,0 +1,55 @@
+.project-info__title {
+  margin-top: $space-out-large;
+
+  h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  @include query(650px) {
+
+    h1 {
+      text-align: left;
+      font-size: 3rem;
+    }
+  }
+}
+
+.project-info__details {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+
+.project-info__item {
+    width: 100%;
+    flex: 1 auto;
+    padding: $space-small;
+
+  @include query(800px) {
+    width: 30%;
+  }
+
+}
+
+.project-info__item-tool {
+  padding: 0 $space-large $space-large $space-large;
+  float: left;
+}
+
+.project-info__tools:before {
+  content: "";
+  display: block;
+  background: center no-repeat url(../img/tools02.png);
+  width: 35px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+
