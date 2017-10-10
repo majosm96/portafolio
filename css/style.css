@@ -482,7 +482,8 @@ hr {
       width: 30%; } }
 
 .skills__img img {
-  width: 100px; }
+  width: 80px;
+  margin: 2rem; }
 
 .navigation {
   position: fixed;
