@@ -1,0 +1,23 @@
+
+.my-img {
+  width: 200px;
+  filter: none;
+  opacity: none;
+} 
+
+.personal-info {
+   h1 {
+     margin-top: 15px;
+   }
+}
+
+.personal-info__item {
+  width: 100%;
+  float: left;
+  padding: $space-small;
+
+  @include query(768px) {
+     width: 50%;
+     padding: $space-medium;
+  }
+}

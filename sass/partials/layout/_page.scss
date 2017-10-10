@@ -28,6 +28,14 @@
 	background-repeat: repeat;
 }
 
+.bg-red {
+  background-color: $main-color;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 .section-wrap {
   padding: $space-large $space-base;
 
