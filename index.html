@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <div class="l-group">
-        <header class="l-group bg-white" role="banner">
+        <header class="l-group bg-white site-header" role="banner">
           <div class="site-nav">
             <a href="index.html" class="logo bg-imgs">
               <img src="img/eye_open.png" alt="Logo Maria Jose Solis">
@@ -41,10 +41,10 @@
 
             <div class="right-nav">
               <ul class="inner-nav">
-                <li><a class="underline" href="https://majosm96.github.io/portafolio/#projects">Work</a></li>
-                <li><a class="underline" href="">About</a></li>
-                <li><a class="underline" href="https://majosm96.github.io/portafolio/#skills">Skills</a></li>
-                <li><a class="underline" href="https://majosm96.github.io/portafolio/#contact">Contact</a></li>
+                <li><a class="underline menuItem" href="#projects">Work</a></li>
+                <li><a class="underline menuItem" href="#about">About</a></li>
+                <li><a class="underline menuItem" href="#skills">Skills</a></li>
+                <li><a class="underline menuItem" href="#contact">Contact</a></li>
               </ul>
             </div>
 
@@ -53,7 +53,7 @@
         </header>
       </div>
 
-      <main role="main">
+      <main role="main l-group">
         <!--Teaser about me-->
         <section class="l-group section-wrap group personal-info">
 
@@ -68,7 +68,7 @@
             </ul>
           </div>
 
-          <div class="personal-info__item">
+          <div class="personal-info__item" id="">
             <h1>Hello</h1>
             <p>I'm Maria Jose, front-end web developer with some good design sense. Also photographer amateur and lover of the adventure.
             I love working with people who <strong>love</strong> what they do. :)</p>
@@ -85,26 +85,29 @@
           <div class="bg-pattern">
 
             <ul class="projects">
-              <div class="project draw-border-blue">
-                <a href="project01.html">
-                  <div class="project-info">
-                    <a href="#" class="project__title">conversABLE</a>
+              
+              <li class="project draw-border-blue" id="project">
+                  <div class="project-img">
+                    <a href="project01.html">
+                      <img id="project-img" src="img/conversable01.jpg" alt="Conversable Project">
+                    </a>
+                  </div>
+                  <div class="project-info" id="projectInfo">
+                    <a href="project01.html" class="project__title">conversABLE</a>
                     <h4>HTML, CSS, Javascript, Drupal</h4>
                   </div>
-                  <div class="project-img">
-                    <img class="" src="img/conversable01.jpg" alt="Blog post">
-                  </div>
-                </a>
-              </div>
+              </li>
 
-              <li class="project draw draw-border-red">
-                  <div class="project-info">
-                    <a href="#" class="project__title">Galaxias</a>
-                    <h4>HTML, CSS, Javascript, Drupal</h4>
-                  </div>
-                  <div class="project-img">
-                    <img class="" src="img/galaxias.png" alt="Blog post">
-                  </div>
+              <li class="project draw-border-blue" >
+                <div class="project-img">
+                  <a href="project01.html">
+                    <img class="project-img__js" src="img/galaxias.png" alt="Galaxies Project">
+                  </a>
+                </div>
+                <div class="project-info ">
+                  <a href="project01.html" class="project__title">Galaxies</a>
+                  <h4>UX - UI</h4>
+                </div>
               </li>
 
               <li class="project draw-border-blue">
@@ -117,7 +120,7 @@
                   </div>
               </li>
 
-              <li class="project draw-border-red">
+              <li class="project draw-border-blue">
                   <div class="project-info">
                     <a href="#" class="project__title">CETAV</a>
                     <h4>HTML, CSS, Javascript, Drupal</h4>
@@ -137,7 +140,7 @@
                   </div>
               </li>
 
-              <li class="project draw-border-red">
+              <li class="project draw-border-blue">
                   <div class="project-info">
                     <a href="#" class="project__title">Sound Wave</a>
                     <h4>HTML, CSS, Javascript, Drupal</h4>

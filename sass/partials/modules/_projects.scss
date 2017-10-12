@@ -62,6 +62,9 @@
 
 .project-img {
     background-color: #fff;
+    a {
+      border-bottom: none;
+    }
     img {
       filter: grayscale(100%) opacity(0.2);
     }
@@ -69,13 +72,14 @@
 
 .project-img:hover {
   img {
-      filter: grayscale(100%) opacity(0.1);
+      filter: opacity(0.0);
     }
 }
 
 .project-info {
   position: absolute;
   margin: 30px;
+  top: 10px;
 
   h4 {
     margin-top: 10px;
@@ -85,9 +89,9 @@
 .project__title {
   margin-bottom: $space-out-small;
   background-color: transparent;
-  border-bottom: 1px solid #000;
-  color: #000;
-  font-weight: 100;
+  border-bottom: 1px solid $font-color-base;
+  color: $font-color-base;
+  font-weight: 800;
   -webkit-text-decoration-skip: objects;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -104,6 +108,6 @@
 
 
 .draw-border-blue {
-  @include btn-border-drawing(#000, $acent-color, 2px, bottom, right);
+  @include btn-border-drawing(#000, $second-color, 2px, bottom, right);
 }
 

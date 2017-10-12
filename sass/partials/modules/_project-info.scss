@@ -16,6 +16,18 @@
   }
 }
 
+.conversable {
+  background-image: url(../img/conversable0.png) repeat-y;
+  border: none;
+	height: 2400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: left;
+	width: 750px;
+  
+}
+
 .project-info__details {
   justify-content: center;
   display: flex;
@@ -46,9 +58,10 @@
 .project-info__tools:before {
   content: "";
   display: block;
-  background: center no-repeat url(../img/tools02.png);
-  width: 35px;
-  height: 50px;
+  background: center no-repeat url(../img/tools.png);
+  width: 48px;
+  height: 59px;
+  background-size: 90%;
   margin-right: 10px;
   float: left;
 }

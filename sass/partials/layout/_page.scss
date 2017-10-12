@@ -32,15 +32,24 @@
   background-color: $main-color;
 }
 
+.bg-red__variant {
+  background-color: $red-variant;
+}
+
+
+.bg-blue {
+  background-color: $second-color;
+}
+
 .bg-white {
   background-color: #fff;
 }
 
 .section-wrap {
-  padding: $space-large $space-base;
+  padding: 4rem $space-base;
 
   @include query(600px) {
-    padding: $space-large $space-medium;
+    padding: $space-x-large $space-medium;
   }
 }
 
