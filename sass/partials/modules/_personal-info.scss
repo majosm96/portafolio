@@ -1,9 +1,45 @@
 
+.single-header-cat {
+  margin: 1rem 0 3rem 0;
+  display: block;
+  text-align: center;
+}
+
+.social-icons {
+  display: block;
+  padding: 0;
+  margin: 20px 0;
+
+  li {
+    margin-left: .3125rem;
+    margin-right: .3125rem;
+    display: inline-block;
+  }
+
+  a {
+    border: none;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: inline-block;
+    border: .0625rem solid #000;
+    border-radius: 50%;
+    line-height: 2.375rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+}
+
 .my-img {
   width: 200px;
   filter: none;
   opacity: none;
-} 
+}
 
 .personal-info {
    h1 {
