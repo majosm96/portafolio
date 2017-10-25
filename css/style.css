@@ -760,6 +760,15 @@ hr {
   float: left;
 }
 
+.project__mobile-imgs {
+  text-align: center;
+}
+
+.project__mobile-imgs img {
+  width: 25%;
+  margin: 3.375rem;
+}
+
 .contact__img {
   width: 80px;
   margin: 1rem;
