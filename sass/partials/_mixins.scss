@@ -35,24 +35,28 @@
     }
 }
 
-@mixin btn-border-drawing($color: #ccc, $hover: #000, $width: 2px, $vertical: top, $horizontal: left, $duration: 1s) {
-  box-shadow: inset 0 0 0 $width $color;
-  color: $color;
-  transition: color $duration $duration/3;
-  position: relative;
+// Query
+// Genera animacion en borde de proyectos 
 
-  &::before,
-  &::after {
-    border: 0 solid transparent;
-    box-sizing: border-box;
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    width: 0; height: 0;
 
-    #{$vertical}: 0;
-    #{$horizontal}: 0;
-  }
+@mixin btn-border-drawing($color: #ccc, $hover: #000, $width: 1px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+    box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration $duration/3;
+    position: relative;
+
+    &::before,
+    &::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        width: 0; height: 0;
+
+        #{$vertical}: 0;
+        #{$horizontal}: 0;
+    }
 
   &::before {
     $h-side: if($horizontal == 'left', 'right', 'left');

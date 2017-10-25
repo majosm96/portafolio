@@ -1,59 +1,62 @@
 .l-content {
-  margin: 0 auto;
-  width: 100%;
+    margin: 0 auto;
+    width: 100%;
 
-  @include query(500px) {
-    width: 85%;
-  }
+    @include query(500px) {
+        width: 85%;
+    }
 
-  @include query(800px) {
-    width: 65%;
-  }
+    @include query(800px) {
+        width: 65%;
+    }
 }
 
 .l-group {
-  @include micro-clearfix;
+    @include micro-clearfix;
 }
 
 .group {
-  @include micro-clearfix;
-  margin: 0 auto;
-  max-width: 1400px;
+    @include micro-clearfix;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
-
 .bg-pattern {
-  background-image: url(../img/dot_final.png);
-	background-size: 15px;
-	background-repeat: repeat;
+    background-image: url(../img/dot_final.png);
+    background-size: 12px;
+    background-repeat: repeat;
 }
 
 .bg-red {
-  background-color: $main-color;
+    background-color: $main-color;
 }
 
 .bg-red__variant {
-  background-color: $red-variant;
+    background-color: $red-variant;
 }
 
 
 .bg-blue {
-  background-color: $second-color;
+    background-color: $second-color;
+}
+
+.bg-yellow {
+    background-color: $second-color;
 }
 
 .bg-white {
-  background-color: rgba(255, 255, 255, 0.86);
+    background-color: rgba(255, 255, 255, 0.86);
 }
 
 .section-wrap {
-  padding: 4rem $space-base;
+    padding: 4rem $space-base;
 
-  @include query(600px) {
-    padding: $space-x-large $space-medium;
-  }
+    @include query(600px) {
+        padding: $space-x-large $space-medium;
+    }
 }
 
 .wrapper {
-  background-color: #fff;
-  position: relative;
+    background-color: #fff;
+    position: relative;
 }

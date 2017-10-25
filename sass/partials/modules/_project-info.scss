@@ -1,41 +1,29 @@
 .project-info__title {
-  margin-top: $space-out-large;
-
-  h1 {
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  @include query(650px) {
+    margin-top: $space-out-large;
 
     h1 {
-      text-align: left;
-      font-size: 3rem;
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
     }
-  }
-}
 
-.conversable {
-  background-image: url(../img/conversable0.png) repeat-y;
-  border: none;
-	height: 2400px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	text-align: left;
-	width: 750px;
-  
+    @include query(650px) {
+
+        h1 {
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
 }
 
 .project-info__details {
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  list-style: none;
-  padding: 0;
-  position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    position: relative;
 }
 
 
@@ -44,25 +32,24 @@
     flex: 1 auto;
     padding: $space-small;
 
-  @include query(800px) {
-    width: 30%;
-  }
-
+    @include query(800px) {
+        width: 30%;
+    }
 }
 
 .project-info__item-tool {
-  padding: 0 $space-large $space-large $space-large;
-  float: left;
+    padding: 0 $space-large $space-large $space-large;
+    float: left;
 }
 
 .project-info__tools:before {
-  content: "";
-  display: block;
-  background: center no-repeat url(../img/tools.png);
-  width: 48px;
-  height: 59px;
-  background-size: 90%;
-  margin-right: 10px;
-  float: left;
+    content: "";
+    display: block;
+    background: center no-repeat url(../img/tools02.png);
+    width: 48px;
+    height: 59px;
+    background-size: 90%;
+    margin-right: 10px;
+    float: left;
 }
 

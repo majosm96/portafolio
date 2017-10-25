@@ -1,64 +1,60 @@
 .site-header {
-  position: fixed;
-  width: 98.8%;
-  z-index: 1;
-  top: 0rem;
-  border-top: 2px solid $red-variant;
+    position: fixed;
+    width: 98.8%;
+    z-index: 1;
+    top: 0rem;
+    border-top: 2px solid $red-variant;
 
-  @include query(371px) {
-     width: 98.99%;
-  }
+    @include query(371px) {
+        width: 98.99%;
+    }
 
-  @include query(495px) {
-     width: 99.2%;
-  }
+    @include query(495px) {
+        width: 99.2%;
+    }
 
-  @include query(700px) {
-     width: 99.4%
-  }
+    @include query(700px) {
+        width: 99.4%
+    }
 
-  @include query(900px) {
-     width: 99.6%
-  }
+    @include query(900px) {
+        width: 99.6%
+    }
 
-  // @include query(1000px) {
-  //    width: 99.8%
-  // }
+    // @include query(1000px) {
+    //    width: 99.8%
+    // }
 
-  // @include query(1200px) {
-  //    width: 100%
-  // }
+    // @include query(1200px) {
+    //    width: 100%
+    // }
 
-  // @include query(1400px) {
-  //    width: 100.2%
-  // }
+    // @include query(1400px) {
+    //    width: 100.2%
+    // }
 }
 
 .site-nav {
-  padding: .25em 1rem;
+    padding: .25em 1rem;
 }
 
 .logo {
-  width: 45px;
-  margin: 10px 2px;
-  float: left;
-  border: none;
+    width: 45px;
+    margin: 10px 2px;
+    float: left;
+    border: none;
 
-  img {
-      margin-top: 8px;
-  }
+    img {
+        margin-top: 8px;
+    }
 }
 
 .menu-img {
-  width: 39px;
-  margin: 10px 2px;
-  float: right;
-}
-
-.bg-imgs {
-  background: #fff;
+    width: 39px;
+    margin: 10px 2px;
+    float: right;
 }
 
 .menu-img__close {
-  width: 30px;
+    width: 30px;
 }
