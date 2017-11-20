@@ -3,8 +3,7 @@
 // 3. Remove the unwanted box around FAB buttons More info: http://goo.gl/IPwKi
 a {
     background-color: transparent;
-    border-bottom: 1px solid $second-color;
-    color: #000;
+    color: $font-color-base;
     font-weight: 800;
     -webkit-text-decoration-skip: objects;
     -webkit-tap-highlight-color: transparent;
@@ -27,5 +26,28 @@ a:focus {
     border: 0;
     text-decoration: none;
     border: none;
-    color: $second-color;
+    color: #000;
+}
+
+.a--underline {
+    position: relative;
+  
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        &:after {
+        width: 100%;
+        }
+    }
+  
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0; bottom: -3px;
+        height: 1.8px;
+        background-color: #000;
+        width: 0;
+        transition: width .4s;
+    }
 }

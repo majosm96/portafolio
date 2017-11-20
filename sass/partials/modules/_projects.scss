@@ -20,7 +20,7 @@
     border: 1px solid #fff;
 
     h4 {
-        color: $red-variant;
+        // color: $red-variant;
         border-bottom: none;
     }
 }
@@ -80,6 +80,67 @@
 }
 
 
-.draw-border-blue {
+.draw-border-conversable {
     @include btn-border-drawing($font-color-base, $red-variant, 0.25px, bottom, right);
 }
+
+.draw-border-pink {
+    @include btn-border-drawing($font-color-base, $pink , 0.25px, bottom, right);
+}
+
+.draw-border-pink:hover {
+    h4 {
+        color: $pink;
+    } 
+}
+
+.draw-border-purple {
+    @include btn-border-drawing($font-color-base, $purple , 0.25px, bottom, right);
+}
+
+.draw-border-purple:hover {
+    h4 {
+        color: $purple;
+    } 
+}
+
+.draw-border-light-blue {
+    @include btn-border-drawing($font-color-base, $light-blue , 0.25px, bottom, right);
+}
+
+.draw-border-light-blue:hover {
+    h4 {
+        color: $light-blue;
+    } 
+}
+
+.draw-border-orange {
+    @include btn-border-drawing($font-color-base, $orange , 0.25px, bottom, right);
+}
+
+.draw-border-orange:hover {
+    h4 {
+        color: $orange;
+    } 
+}
+
+.draw-border-blue {
+    @include btn-border-drawing($font-color-base, $blue , 0.25px, bottom, right);
+}
+
+.draw-border-blue:hover {
+    h4 {
+        color: $blue;
+    } 
+}
+
+.draw-border-yellow {
+    @include btn-border-drawing($font-color-base, $yellow , 0.25px, bottom, right);
+}
+
+.draw-border-yellow:hover {
+    h4 {
+        color: $yellow;
+    } 
+}
+

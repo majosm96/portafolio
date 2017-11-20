@@ -1,19 +1,20 @@
 .project-info__title {
-    margin-top: $space-out-large;
+  margin-top: $space-out-large;
+
+  h1 {
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  @include query(650px) {
+    margin-top: 8rem;
 
     h1 {
-        color: #fff;
-        font-size: 2rem;
-        text-align: center;
+        text-align: left;
+        font-size: 3rem;
     }
-
-    @include query(650px) {
-
-        h1 {
-            text-align: left;
-            font-size: 3rem;
-        }
-    }
+  }
 }
 
 .project-info__details {
@@ -28,33 +29,33 @@
 
 
 .project-info__item {
-    width: 100%;
-    flex: 1 auto;
-    padding: $space-small;
+  width: 100%;
+  flex: 1 auto;
+  padding: $space-small;
 
-    @include query(1000px) {
-        width: 30%;
-    }
+  @include query(1000px) {
+      width: 30%;
+  }
 }
 
 .project-info__item-tool {
-    padding: $space-large $space-medium;
-    float: left;
-    
-    @include query(1000px) {
-        width: 35%;
-        padding: 0 0 $space-large $space-large;
-    }
+  padding: $space-large $space-medium;
+  float: left;
+  
+  @include query(1000px) {
+    width: 35%;
+    padding: 0 0 $space-large $space-large;
+  }
 }
 
 .project-info__tools:before {
-    content: "";
-    display: block;
-    background: center no-repeat url(../img/tools02.png);
-    width: 48px;
-    height: 59px;
-    background-size: 90%;
-    margin-right: 10px;
-    float: left;
+  content: "";
+  display: block;
+  background: center no-repeat url(../img/tools02.png);
+  width: 48px;
+  height: 59px;
+  background-size: 90%;
+  margin-right: 10px;
+  float: left;
 }
 

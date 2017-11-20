@@ -32,22 +32,34 @@
 }
 
 .bg-red__variant {
-    background-color: $red-variant;
+    background-color: $main-color;
 }
 
 
 .bg-blue {
-    background-color: $second-color;
+    background-color: $blue;
 }
 
+.bg-light-blue {
+    background-color: $light-blue;
+}
 
 .bg-purple {
-    background-color: $purple-variant;
+    background-color: $purple;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-pink {
+    background-color: $pink;
 }
 
 .bg-yellow {
-    background-color: $second-color;
+    background-color: $yellow;
 }
+
 
 .bg-white {
     background-color: rgba(255, 255, 255, 0.86);
