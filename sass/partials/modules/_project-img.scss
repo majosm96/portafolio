@@ -1,9 +1,23 @@
 
 .project__mobile-imgs {
     text-align: center;
-    
+    margin: 0 auto;
+    width: 80%;
+
     img {
-        width: 25%;
-        margin: $space-out-large;
+        padding: $space-small;
     }
+    
+    @include query(500px) {
+        img {
+            width: 25%;
+            margin: $space-large;
+        }
+    }
+}
+
+.project__mobile-img {
+    width: 90%;
+    margin: 0 auto;
+    padding: $space-base;
 }

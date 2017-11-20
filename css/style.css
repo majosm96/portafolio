@@ -33,7 +33,7 @@ body {
   min-height: 100%;
   margin: 0;
   position: relative;
-  border: 2px solid #FFDC12;
+  border: 2px solid #3a3a3a;
 }
 
 ::-moz-selection {
@@ -199,8 +199,7 @@ dt {
 
 a {
   background-color: transparent;
-  border-bottom: 1px solid #f0cf2c;
-  color: #000;
+  color: #333333;
   font-weight: 800;
   -webkit-text-decoration-skip: objects;
   -webkit-tap-highlight-color: transparent;
@@ -221,7 +220,31 @@ a:focus {
   border: 0;
   text-decoration: none;
   border: none;
-  color: #f0cf2c;
+  color: #000;
+}
+
+.a--underline {
+  position: relative;
+}
+
+.a--underline:hover, .a--underline:focus, .a--underline:active {
+  cursor: pointer;
+}
+
+.a--underline:hover:after, .a--underline:focus:after, .a--underline:active:after {
+  width: 100%;
+}
+
+.a--underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1.8px;
+  background-color: #000;
+  width: 0;
+  -webkit-transition: width .4s;
+  transition: width .4s;
 }
 
 th,
@@ -381,7 +404,6 @@ hr {
 }
 
 .project:hover h4 {
-  color: #f3d320;
   border-bottom: none;
 }
 
@@ -488,6 +510,292 @@ hr {
           transition-delay: 0s, 0.25s, 0s;
 }
 
+.draw-border-conversable {
+  -webkit-box-shadow: inset 0 0 0 0.25px #333333;
+          box-shadow: inset 0 0 0 0.25px #333333;
+  color: #333333;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border-conversable::before, .draw-border-conversable::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border-conversable::before {
+  border-bottom-width: 0.25px;
+  border-left-width: 0.25px;
+}
+
+.draw-border-conversable::after {
+  border-top-width: 0.25px;
+  border-right-width: 0.25px;
+}
+
+.draw-border-conversable:hover {
+  color: #3a3a3a;
+}
+
+.draw-border-conversable:hover::before, .draw-border-conversable:hover::after {
+  border-color: #3a3a3a;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border-conversable:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border-conversable:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-pink {
+  -webkit-box-shadow: inset 0 0 0 0.25px #333333;
+          box-shadow: inset 0 0 0 0.25px #333333;
+  color: #333333;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border-pink::before, .draw-border-pink::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border-pink::before {
+  border-bottom-width: 0.25px;
+  border-left-width: 0.25px;
+}
+
+.draw-border-pink::after {
+  border-top-width: 0.25px;
+  border-right-width: 0.25px;
+}
+
+.draw-border-pink:hover {
+  color: #ee525f;
+}
+
+.draw-border-pink:hover::before, .draw-border-pink:hover::after {
+  border-color: #ee525f;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border-pink:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border-pink:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-pink:hover h4 {
+  color: #ee525f;
+}
+
+.draw-border-purple {
+  -webkit-box-shadow: inset 0 0 0 0.25px #333333;
+          box-shadow: inset 0 0 0 0.25px #333333;
+  color: #333333;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border-purple::before, .draw-border-purple::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border-purple::before {
+  border-bottom-width: 0.25px;
+  border-left-width: 0.25px;
+}
+
+.draw-border-purple::after {
+  border-top-width: 0.25px;
+  border-right-width: 0.25px;
+}
+
+.draw-border-purple:hover {
+  color: #5c1834;
+}
+
+.draw-border-purple:hover::before, .draw-border-purple:hover::after {
+  border-color: #5c1834;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border-purple:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border-purple:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-purple:hover h4 {
+  color: #5c1834;
+}
+
+.draw-border-light-blue {
+  -webkit-box-shadow: inset 0 0 0 0.25px #333333;
+          box-shadow: inset 0 0 0 0.25px #333333;
+  color: #333333;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border-light-blue::before, .draw-border-light-blue::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border-light-blue::before {
+  border-bottom-width: 0.25px;
+  border-left-width: 0.25px;
+}
+
+.draw-border-light-blue::after {
+  border-top-width: 0.25px;
+  border-right-width: 0.25px;
+}
+
+.draw-border-light-blue:hover {
+  color: #1dd4d4;
+}
+
+.draw-border-light-blue:hover::before, .draw-border-light-blue:hover::after {
+  border-color: #1dd4d4;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border-light-blue:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border-light-blue:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-light-blue:hover h4 {
+  color: #1dd4d4;
+}
+
+.draw-border-orange {
+  -webkit-box-shadow: inset 0 0 0 0.25px #333333;
+          box-shadow: inset 0 0 0 0.25px #333333;
+  color: #333333;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border-orange::before, .draw-border-orange::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border-orange::before {
+  border-bottom-width: 0.25px;
+  border-left-width: 0.25px;
+}
+
+.draw-border-orange::after {
+  border-top-width: 0.25px;
+  border-right-width: 0.25px;
+}
+
+.draw-border-orange:hover {
+  color: #ff7e15;
+}
+
+.draw-border-orange:hover::before, .draw-border-orange:hover::after {
+  border-color: #ff7e15;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border-orange:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border-orange:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-orange:hover h4 {
+  color: #ff7e15;
+}
+
 .draw-border-blue {
   -webkit-box-shadow: inset 0 0 0 0.25px #333333;
           box-shadow: inset 0 0 0 0.25px #333333;
@@ -521,11 +829,11 @@ hr {
 }
 
 .draw-border-blue:hover {
-  color: #f3d320;
+  color: #2c2ff0;
 }
 
 .draw-border-blue:hover::before, .draw-border-blue:hover::after {
-  border-color: #f3d320;
+  border-color: #2c2ff0;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -540,6 +848,68 @@ hr {
 .draw-border-blue:hover::after {
   -webkit-transition-delay: 0s, 0.25s, 0s;
           transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-blue:hover h4 {
+  color: #2c2ff0;
+}
+
+.draw-border-yellow {
+  -webkit-box-shadow: inset 0 0 0 0.25px #333333;
+          box-shadow: inset 0 0 0 0.25px #333333;
+  color: #333333;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+
+.draw-border-yellow::before, .draw-border-yellow::after {
+  border: 0 solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border-yellow::before {
+  border-bottom-width: 0.25px;
+  border-left-width: 0.25px;
+}
+
+.draw-border-yellow::after {
+  border-top-width: 0.25px;
+  border-right-width: 0.25px;
+}
+
+.draw-border-yellow:hover {
+  color: #f0cf2c;
+}
+
+.draw-border-yellow:hover::before, .draw-border-yellow:hover::after {
+  border-color: #f0cf2c;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border-yellow:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border-yellow:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.draw-border-yellow:hover h4 {
+  color: #f0cf2c;
 }
 
 .skills {
@@ -565,6 +935,7 @@ hr {
           flex: 1 auto;
   text-align: center;
   padding: 1.125rem;
+  position: relative;
 }
 
 @media only screen and (min-width: 650px) {
@@ -576,6 +947,49 @@ hr {
 .skills__img img {
   width: 80px;
   margin: 2rem;
+}
+
+.skills--border:before {
+  content: "";
+  background: center no-repeat url(../img/border03.png);
+  height: 22px;
+  width: 250px;
+  background-size: 100%;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 650px) {
+  .skills--border:before {
+    background: center no-repeat url(../img/border02.png);
+    height: 331px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.skills--border:after {
+  content: "";
+  background: center no-repeat url(../img/border04.png);
+  height: 22px;
+  width: 250px;
+  background-size: 100%;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 650px) {
+  .skills--border:after {
+    content: "";
+    background: center no-repeat url(../img/border.png);
+    height: 331px;
+    width: 24px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .navigation {
@@ -672,11 +1086,89 @@ hr {
   color: #fff;
 }
 
+.img-wrapper {
+  position: relative;
+}
+
+.svg-majo {
+  width: 200px;
+  position: absolute;
+  margin-left: -200px;
+}
+
+@media only screen and (min-width: 425px) {
+  .svg-majo {
+    width: 300px;
+    margin-left: -300px;
+  }
+}
+
+@-webkit-keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hideshow {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.path-1 {
+  -webkit-animation: hideshow 3s ease infinite;
+          animation: hideshow 3s ease infinite;
+}
+
+.path-2 {
+  -webkit-animation: hideshow 5s ease infinite;
+          animation: hideshow 5s ease infinite;
+}
+
+.path-3 {
+  -webkit-animation: hideshow 7s ease infinite;
+          animation: hideshow 7s ease infinite;
+}
+
+.path-4 {
+  -webkit-animation: hideshow 9s ease infinite;
+          animation: hideshow 9s ease infinite;
+}
+
+.path-5 {
+  -webkit-animation: hideshow 11s ease infinite;
+          animation: hideshow 11s ease infinite;
+}
+
 .my-img {
   width: 200px;
   -webkit-filter: none;
           filter: none;
   opacity: none;
+}
+
+@media only screen and (min-width: 425px) {
+  .my-img {
+    width: 300px;
+  }
 }
 
 .personal-info h1 {
@@ -707,6 +1199,9 @@ hr {
 }
 
 @media only screen and (min-width: 650px) {
+  .project-info__title {
+    margin-top: 8rem;
+  }
   .project-info__title h1 {
     text-align: left;
     font-size: 3rem;
@@ -738,15 +1233,22 @@ hr {
   padding: 1.125rem;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .project-info__item {
     width: 30%;
   }
 }
 
 .project-info__item-tool {
-  padding: 0 3.375rem 3.375rem 3.375rem;
+  padding: 3.375rem 2.25rem;
   float: left;
+}
+
+@media only screen and (min-width: 1000px) {
+  .project-info__item-tool {
+    width: 35%;
+    padding: 0 0 3.375rem 3.375rem;
+  }
 }
 
 .project-info__tools:before {
@@ -762,11 +1264,25 @@ hr {
 
 .project__mobile-imgs {
   text-align: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .project__mobile-imgs img {
-  width: 25%;
-  margin: 3.375rem;
+  padding: 1.125rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .project__mobile-imgs img {
+    width: 25%;
+    margin: 3.375rem;
+  }
+}
+
+.project__mobile-img {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .contact__img {
@@ -815,7 +1331,7 @@ hr {
   width: 98.8%;
   z-index: 1;
   top: 0rem;
-  border-top: 2px solid #f3d320;
+  border-top: 2px solid #3a3a3a;
 }
 
 @media only screen and (min-width: 371px) {
@@ -914,15 +1430,31 @@ hr {
 }
 
 .bg-red {
-  background-color: #FFDC12;
+  background-color: #3a3a3a;
 }
 
 .bg-red__variant {
-  background-color: #f3d320;
+  background-color: #3a3a3a;
 }
 
 .bg-blue {
-  background-color: #f0cf2c;
+  background-color: #2c2ff0;
+}
+
+.bg-light-blue {
+  background-color: #1dd4d4;
+}
+
+.bg-purple {
+  background-color: #5c1834;
+}
+
+.bg-orange {
+  background-color: #ff7e15;
+}
+
+.bg-pink {
+  background-color: #ee525f;
 }
 
 .bg-yellow {
@@ -980,7 +1512,7 @@ hr {
 
 .social-menu-footer a:hover {
   background-color: #fff;
-  color: #FFDC12;
+  color: #000;
 }
 
 .footer-info p {
