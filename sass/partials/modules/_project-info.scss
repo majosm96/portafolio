@@ -32,14 +32,19 @@
     flex: 1 auto;
     padding: $space-small;
 
-    @include query(800px) {
+    @include query(1000px) {
         width: 30%;
     }
 }
 
 .project-info__item-tool {
-    padding: 0 $space-large $space-large $space-large;
+    padding: $space-large $space-medium;
     float: left;
+    
+    @include query(1000px) {
+        width: 35%;
+        padding: 0 0 $space-large $space-large;
+    }
 }
 
 .project-info__tools:before {
