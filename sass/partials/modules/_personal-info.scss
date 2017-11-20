@@ -35,8 +35,50 @@
 
 }
 
+.img-wrapper {
+  position: relative;
+}
+
+.svg-majo {
+  width: 300px;
+  position: absolute;
+  margin-left: -300px;
+}
+
+@keyframes hideshow {
+  0% { opacity: 1; }
+  10% { opacity: 1; }
+  15% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.path-1 {
+  animation: hideshow 3s ease infinite;
+}
+
+.path-2 {
+  animation: hideshow 5s ease infinite;
+}
+
+.path-3 {
+  animation: hideshow 7s ease infinite;
+}
+
+.path-4 {
+  animation: hideshow 9s ease infinite;
+}
+
+.path-5 {
+  animation: hideshow 11s ease infinite;
+}
+
+
+
+
+
+
 .my-img {
-    width: 200px;
+    width: 300px;
     filter: none;
     opacity: none;
 }
@@ -56,4 +98,11 @@
         width: 50%;
         padding: $space-medium;
     }
+}
+
+.fadein {
+  fill: #000;
+  -webkit-transition: fill 1s;
+  -moz-transition: fill 1s;
+  transition: fill 1s;
 }

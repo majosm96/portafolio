@@ -3,7 +3,7 @@
     width: 98.8%;
     z-index: 1;
     top: 0rem;
-    border-top: 2px solid $red-variant;
+    border-top: 2px solid #000;
 
     @include query(371px) {
         width: 98.99%;

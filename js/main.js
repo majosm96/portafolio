@@ -35,11 +35,11 @@ function menuItemsClose() {
 
 var project= document.getElementById("projectInfo");
 
-function mouseOver() {  
+function mouseOver() {
   document.getElementById("project-img").style.opacity = "0.0";
 }
 
-function mouseOut() {  
+function mouseOut() {
   document.getElementById("project-img").style.opacity = "0.8";
 }
 
@@ -50,29 +50,3 @@ menuItemsClose();
 
 project.addEventListener("mouseover", mouseOver);
 project.addEventListener("mouseout", mouseOut);
-
-// function hoverBg(img) {
-
-//   var projectItems = [].slice.call(document.getElementsByClassName("project"));
-
-//   projectItems.forEach(function(element, index) {
-
-//     element.addEventListener("mouseover", function() {
-//       img.style.opacity = "0.0";
-//     });
-
-//     element.addEventListener("mouseout", function() {
-//       img.style.opacity = "0.8";
-//     });
-
-//   });
-// }
-
-// var img01 = document.getElementById("project-img01");
-// var img02 = document.getElementById("project-img02");
-// // var img01 = document.getElementById("project-img");
-// // var img01 = document.getElementById("project-img");
-// // var img01 = document.getElementById("project-img");
-
-// hoverBg(img01);
-// hoverBg(img02);
