@@ -33,6 +33,10 @@
   flex: 1 auto;
   padding: $space-small;
 
+  a {
+    margin: $space-base $space-base 0 0;
+  }
+
   @include query(1000px) {
       width: 30%;
   }
