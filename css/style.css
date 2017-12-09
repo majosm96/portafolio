@@ -1008,8 +1008,24 @@ hr {
 }
 
 .right-nav {
+  position: relative;
+  text-align: center;
+  display: block;
+  height: 100%;
   float: right;
   width: 100%;
+}
+
+.right-nav::before,
+.right-nav .inner-nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.right-nav::before {
+  content: '';
+  width: 0;
+  height: 100%;
 }
 
 .inner-nav {
@@ -1026,8 +1042,14 @@ hr {
 .inner-nav a {
   color: #fff;
   border: none;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 500px) {
+  .inner-nav a {
+    font-size: 3rem;
+  }
 }
 
 .underline {
@@ -1416,6 +1438,7 @@ hr {
 
 .menu-img__close {
   width: 30px;
+  margin: 17px 9px;
 }
 
 .l-content {
@@ -1490,6 +1513,10 @@ hr {
 
 .bg-pink {
   background-color: #ee525f;
+}
+
+.bg-pink-orange {
+  background-color: #f56767;
 }
 
 .bg-yellow {
